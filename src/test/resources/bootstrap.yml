@@ -1,0 +1,3 @@
+embedded.couchbase.dockerImage: couchbase/server:7.6.3
+embedded.couchbase.waitTimeoutInSeconds: 150
+embedded.containers.enabled: false

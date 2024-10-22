@@ -1,0 +1,6 @@
+spring.couchbase:
+  connection-string: localhost
+  username: Administrator
+  password: password
+
+spring.data.couchbase.bucket-name: test
