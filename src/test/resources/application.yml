@@ -1,6 +1,6 @@
 spring.couchbase:
-  connection-string: localhost
-  username: Administrator
-  password: password
+  connection-string: ${embedded.couchbase.host}:${embedded.couchbase.bootstrapHttpDirectPort}=MANAGER,${embedded.couchbase.host}:${embedded.couchbase.bootstrapCarrierDirectPort}=KV
+  username: ${embedded.couchbase.user}
+  password: ${embedded.couchbase.password}
 
-spring.data.couchbase.bucket-name: test
+spring.data.couchbase.bucket-name: ${embedded.couchbase.bucket}
